@@ -1,11 +1,10 @@
-%%writefile app.py
-import streamlit as st  # PHẢI CÓ DÒNG NÀY TRƯỚC @st.cache_resource
+import streamlit as st
 import numpy as np
 import cv2
 import os
 import urllib.request
 import warnings
-warnings.filterWarnings("ignore")
+warnings.filterwarnings("ignore")
 
 # ====================== FORCE CPU ======================
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
